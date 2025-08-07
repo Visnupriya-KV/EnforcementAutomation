@@ -1,0 +1,3811 @@
+{
+  "config": {
+    "configFile": "/Users/VVenkateshwaran/Desktop/Roker_VMS/playwright.config.js",
+    "rootDir": "/Users/VVenkateshwaran/Desktop/Roker_VMS/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/json/report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report/html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/VVenkateshwaran/Desktop/Roker_VMS/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/VVenkateshwaran/Desktop/Roker_VMS/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/VVenkateshwaran/Desktop/Roker_VMS/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "API_Test/AppealRequest.spec.js",
+      "file": "API_Test/AppealRequest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_AppealRequest_Test: Submit appeal and expect exact successful response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4351,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "REQUEST\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/appeal-request\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Content-Type\": \"application/json\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"CitationNo\": \"BNREEE\",\n  \"FirstName\": \"Test\",\n  \"LastName\": \"Admin\",\n  \"StreetAddress1\": \"410 Goldie Lane\",\n  \"StreetAddress2\": \"\",\n  \"City\": \"Fairbanks\",\n  \"State\": \"Alaska\",\n  \"ZipCode\": \"99701\",\n  \"EmailAddress\": \"test.admin@yopmail.com\",\n  \"Phone\": \"6878542165\",\n  \"Note\": \"This is for Test\"\n}\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"Appeal request processed succesfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Exact expected response received.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:27.573Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-AppealRequest-API-21344-t-exact-successful-response-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d5aedb329c8f15f3295-75dd7dcf6d227e488485",
+          "file": "API_Test/AppealRequest.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_AppealRequest_Test: Submit appeal and expect exact successful response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1221,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "REQUEST\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/appeal-request\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Content-Type\": \"application/json\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"CitationNo\": \"BNREEE\",\n  \"FirstName\": \"Test\",\n  \"LastName\": \"Admin\",\n  \"StreetAddress1\": \"410 Goldie Lane\",\n  \"StreetAddress2\": \"\",\n  \"City\": \"Fairbanks\",\n  \"State\": \"Alaska\",\n  \"ZipCode\": \"99701\",\n  \"EmailAddress\": \"test.admin@yopmail.com\",\n  \"Phone\": \"6878542165\",\n  \"Note\": \"This is for Test\"\n}\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"Appeal request processed succesfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Exact expected response received.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:41.106Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-AppealRequest-API-21344-t-exact-successful-response-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d5aedb329c8f15f3295-acdba8024fa1209c9e1d",
+          "file": "API_Test/AppealRequest.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_AppealRequest_Test: Submit appeal and expect exact successful response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1099,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "REQUEST\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/appeal-request\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Content-Type\": \"application/json\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"CitationNo\": \"BNREEE\",\n  \"FirstName\": \"Test\",\n  \"LastName\": \"Admin\",\n  \"StreetAddress1\": \"410 Goldie Lane\",\n  \"StreetAddress2\": \"\",\n  \"City\": \"Fairbanks\",\n  \"State\": \"Alaska\",\n  \"ZipCode\": \"99701\",\n  \"EmailAddress\": \"test.admin@yopmail.com\",\n  \"Phone\": \"6878542165\",\n  \"Note\": \"This is for Test\"\n}\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"Appeal request processed succesfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Exact expected response received.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:50.198Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-AppealRequest-API-21344-t-exact-successful-response-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d5aedb329c8f15f3295-bd566e892067b3a45466",
+          "file": "API_Test/AppealRequest.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/appealUploadDoc.spec.js",
+      "file": "API_Test/appealUploadDoc.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_AppealUploadDoc_Test: Upload a document and expect exact successful response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1366,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nREQUEST\n"
+                    },
+                    {
+                      "text": "Upload URL: https://newhope.vms.staging.rokerplus.com/api/api/appeal-request-documents\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "File Path: /Users/VVenkateshwaran/Desktop/Roker_VMS/assert/api-testing1.jpg\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"Document(s) uploaded succesfully.\",\"StatusCode\":200,\"Content\":[]}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Document uploaded and expected response received.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:31.973Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-appealUploadDoc-A-a933c-t-exact-successful-response-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9ab8d2306e11290063c5-f7aae564a27c69cc32e4",
+          "file": "API_Test/appealUploadDoc.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "API_AppealUploadDoc_Test: Upload a document and expect exact successful response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1072,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nREQUEST\n"
+                    },
+                    {
+                      "text": "Upload URL: https://newhope.vms.staging.rokerplus.com/api/api/appeal-request-documents\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "File Path: /Users/VVenkateshwaran/Desktop/Roker_VMS/assert/api-testing1.jpg\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"Document(s) uploaded succesfully.\",\"StatusCode\":200,\"Content\":[]}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Document uploaded and expected response received.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:42.373Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-appealUploadDoc-A-a933c-t-exact-successful-response-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9ab8d2306e11290063c5-950eb6c32aabfcf1bad6",
+          "file": "API_Test/appealUploadDoc.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "API_AppealUploadDoc_Test: Upload a document and expect exact successful response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1278,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nREQUEST\n"
+                    },
+                    {
+                      "text": "Upload URL: https://newhope.vms.staging.rokerplus.com/api/api/appeal-request-documents\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "File Path: /Users/VVenkateshwaran/Desktop/Roker_VMS/assert/api-testing1.jpg\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"Document(s) uploaded succesfully.\",\"StatusCode\":200,\"Content\":[]}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Document uploaded and expected response received.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:51.343Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-appealUploadDoc-A-a933c-t-exact-successful-response-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9ab8d2306e11290063c5-d25dc421e69a21af868a",
+          "file": "API_Test/appealUploadDoc.spec.js",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/CheckTicketAppeal.spec.js",
+      "file": "API_Test/CheckTicketAppeal.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "CheckTicketAppeal API Test Suite",
+          "file": "API_Test/CheckTicketAppeal.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "API_CheckTicketAppeal_Test: Check if ticket is in appeal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 273,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nREQUEST\n"
+                        },
+                        {
+                          "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/check-ticket-in-appeal?CitationNo=BNREEE\n"
+                        },
+                        {
+                          "text": "Method: POST\n"
+                        },
+                        {
+                          "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                        },
+                        {
+                          "text": "Query Param: { CitationNo: \u001b[32m'BNREEE'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "\nRESPONSE\n"
+                        },
+                        {
+                          "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "Body: {\n  \"StatusMessage\": \"True\",\n  \"StatusCode\": 200,\n  \"Content\": \"Ticket in appeal : True\"\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-24T04:52:33.374Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-CheckTicketAppeal-eba77-heck-if-ticket-is-in-appeal-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "28d0d72aea5a82f26ab7-548549ebb3f96a657e72",
+              "file": "API_Test/CheckTicketAppeal.spec.js",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "API_CheckTicketAppeal_Test: Check if ticket is in appeal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 251,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nREQUEST\n"
+                        },
+                        {
+                          "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/check-ticket-in-appeal?CitationNo=BNREEE\n"
+                        },
+                        {
+                          "text": "Method: POST\n"
+                        },
+                        {
+                          "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                        },
+                        {
+                          "text": "Query Param: { CitationNo: \u001b[32m'BNREEE'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "\nRESPONSE\n"
+                        },
+                        {
+                          "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "Body: {\n  \"StatusMessage\": \"True\",\n  \"StatusCode\": 200,\n  \"Content\": \"Ticket in appeal : True\"\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-24T04:52:43.485Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-CheckTicketAppeal-eba77-heck-if-ticket-is-in-appeal-firefox/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "28d0d72aea5a82f26ab7-1bbf73e56581472c5e70",
+              "file": "API_Test/CheckTicketAppeal.spec.js",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "API_CheckTicketAppeal_Test: Check if ticket is in appeal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 253,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nREQUEST\n"
+                        },
+                        {
+                          "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/check-ticket-in-appeal?CitationNo=BNREEE\n"
+                        },
+                        {
+                          "text": "Method: POST\n"
+                        },
+                        {
+                          "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                        },
+                        {
+                          "text": "Query Param: { CitationNo: \u001b[32m'BNREEE'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "\nRESPONSE\n"
+                        },
+                        {
+                          "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "Body: {\n  \"StatusMessage\": \"True\",\n  \"StatusCode\": 200,\n  \"Content\": \"Ticket in appeal : True\"\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-24T04:52:52.661Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-CheckTicketAppeal-eba77-heck-if-ticket-is-in-appeal-webkit/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "28d0d72aea5a82f26ab7-5548564499ce73460803",
+              "file": "API_Test/CheckTicketAppeal.spec.js",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "API_Test/CheckTicketEligibleAppeal.spec.js",
+      "file": "API_Test/CheckTicketEligibleAppeal.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_CheckTicketEligibleAppeal_Test: Validate citation eligibility for appeal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 277,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nREQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/check-ticket-eligible-for-appeal?CitationNo=BNE455\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"True\",\"StatusCode\":200,\"Content\":\"Appeal Enabled\"}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Response matched one of the approved formats.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:33.688Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-CheckTicketEligib-787e1-tion-eligibility-for-appeal-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6ba3ea5f6237645fd3ec-e7ff147990db0ce091ff",
+          "file": "API_Test/CheckTicketEligibleAppeal.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_CheckTicketEligibleAppeal_Test: Validate citation eligibility for appeal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 280,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nREQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/check-ticket-eligible-for-appeal?CitationNo=BNE455\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"True\",\"StatusCode\":200,\"Content\":\"Appeal Enabled\"}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Response matched one of the approved formats.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:43.777Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-CheckTicketEligib-787e1-tion-eligibility-for-appeal-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6ba3ea5f6237645fd3ec-828670ebed188e236a34",
+          "file": "API_Test/CheckTicketEligibleAppeal.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_CheckTicketEligibleAppeal_Test: Validate citation eligibility for appeal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 260,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nREQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/check-ticket-eligible-for-appeal?CitationNo=BNE455\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\nRESPONSE\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"True\",\"StatusCode\":200,\"Content\":\"Appeal Enabled\"}\n"
+                    },
+                    {
+                      "text": "\nTest Passed: Response matched one of the approved formats.\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:52.952Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-CheckTicketEligib-787e1-tion-eligibility-for-appeal-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6ba3ea5f6237645fd3ec-3dd0097ee0982d48b183",
+          "file": "API_Test/CheckTicketEligibleAppeal.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/createAndActivateUser.spec.js",
+      "file": "API_Test/createAndActivateUser.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_ActivateUser_Test: Create and Activate a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 653,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nCREATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_777m1b\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_lcosbs@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\nCREATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_777m1b\" created successfully.\n"
+                    },
+                    {
+                      "text": "\nACTIVATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Activate?userName=Autouser_777m1b\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\nACTIVATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been activate successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_777m1b\" successfully activated.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:34.016Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndActivate-f95e7--Create-and-Activate-a-User-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8d1959205ae1d8612b0-6f829d4a1ea24c7a22d6",
+          "file": "API_Test/createAndActivateUser.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_ActivateUser_Test: Create and Activate a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 514,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nCREATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_zhaope\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_mjtkd5@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\nCREATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_zhaope\" created successfully.\n"
+                    },
+                    {
+                      "text": "\nACTIVATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Activate?userName=Autouser_zhaope\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\nACTIVATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been activate successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_zhaope\" successfully activated.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:44.104Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndActivate-f95e7--Create-and-Activate-a-User-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8d1959205ae1d8612b0-3e0b6928369bf9a6b4b8",
+          "file": "API_Test/createAndActivateUser.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_ActivateUser_Test: Create and Activate a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 514,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nCREATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_te5fnd\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_k7by0g@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\nCREATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_te5fnd\" created successfully.\n"
+                    },
+                    {
+                      "text": "\nACTIVATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Activate?userName=Autouser_te5fnd\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\nACTIVATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been activate successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_te5fnd\" successfully activated.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:53.262Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndActivate-f95e7--Create-and-Activate-a-User-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8d1959205ae1d8612b0-c35c9604a16288ea0e8a",
+          "file": "API_Test/createAndActivateUser.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/createAndDeactivateUser.spec.js",
+      "file": "API_Test/createAndDeactivateUser.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_DeactivateUser_Test: Create and Deactivate a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 662,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nCREATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_pwc3i8\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_xws7ku@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\nCREATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_pwc3i8\" created successfully.\n"
+                    },
+                    {
+                      "text": "\nDEACTIVATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Deactivate?userName=Autouser_pwc3i8\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\nDEACTIVATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been delete successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_pwc3i8\" successfully deactivated.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:34.722Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndDeactiva-4e9cc-reate-and-Deactivate-a-User-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2341465a1473efc9bd5f-ffea28f2e1d4798f1a93",
+          "file": "API_Test/createAndDeactivateUser.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_DeactivateUser_Test: Create and Deactivate a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 505,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nCREATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_k19txm\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_emcu0g@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\nCREATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_k19txm\" created successfully.\n"
+                    },
+                    {
+                      "text": "\nDEACTIVATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Deactivate?userName=Autouser_k19txm\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\nDEACTIVATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been delete successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_k19txm\" successfully deactivated.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:44.661Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndDeactiva-4e9cc-reate-and-Deactivate-a-User-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2341465a1473efc9bd5f-c6c9d58d88f38ceb09ce",
+          "file": "API_Test/createAndDeactivateUser.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_DeactivateUser_Test: Create and Deactivate a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 509,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\nCREATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_b7pxoh\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_0sft0g@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\nCREATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_b7pxoh\" created successfully.\n"
+                    },
+                    {
+                      "text": "\nDEACTIVATE USER REQUEST\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Deactivate?userName=Autouser_b7pxoh\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\nDEACTIVATE USER RESPONSE\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been delete successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_b7pxoh\" successfully deactivated.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:53.817Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndDeactiva-4e9cc-reate-and-Deactivate-a-User-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2341465a1473efc9bd5f-973623be3f4a06f2033c",
+          "file": "API_Test/createAndDeactivateUser.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/createAndDeleteUserGroup.spec.js",
+      "file": "API_Test/createAndDeleteUserGroup.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_DeleteUserGroup_Test: Create and Delete a User Group",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 573,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- CREATE GROUP REQUEST ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"GroupName\": \"AutoGroup_9iloq0\",\n  \"NewGroupName\": \"AutoGroup_9iloq0\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n--- CREATE GROUP RESPONSE ---\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_9iloq0\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n--- DELETE GROUP REQUEST ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Delete?userGroupName=AutoGroup_9iloq0\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "\n--- DELETE GROUP RESPONSE ---\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been deleted successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_9iloq0\" deleted successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:35.430Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndDeleteUs-5222d-ate-and-Delete-a-User-Group-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "253af73e2e4cb6dd65ae-2e310e4df40ad3c18fd3",
+          "file": "API_Test/createAndDeleteUserGroup.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_DeleteUserGroup_Test: Create and Delete a User Group",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 512,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- CREATE GROUP REQUEST ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"GroupName\": \"AutoGroup_rlh8z3\",\n  \"NewGroupName\": \"AutoGroup_rlh8z3\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n--- CREATE GROUP RESPONSE ---\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_rlh8z3\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n--- DELETE GROUP REQUEST ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Delete?userGroupName=AutoGroup_rlh8z3\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "\n--- DELETE GROUP RESPONSE ---\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been deleted successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_rlh8z3\" deleted successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:45.225Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndDeleteUs-5222d-ate-and-Delete-a-User-Group-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "253af73e2e4cb6dd65ae-4b0a6090af198559e90a",
+          "file": "API_Test/createAndDeleteUserGroup.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_DeleteUserGroup_Test: Create and Delete a User Group",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 511,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- CREATE GROUP REQUEST ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"GroupName\": \"AutoGroup_jrtye9\",\n  \"NewGroupName\": \"AutoGroup_jrtye9\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n--- CREATE GROUP RESPONSE ---\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_jrtye9\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n--- DELETE GROUP REQUEST ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Delete?userGroupName=AutoGroup_jrtye9\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "\n--- DELETE GROUP RESPONSE ---\n"
+                    },
+                    {
+                      "text": "Status Code: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been deleted successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_jrtye9\" deleted successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:54.380Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndDeleteUs-5222d-ate-and-Delete-a-User-Group-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "253af73e2e4cb6dd65ae-5479fdc9005cdb33f382",
+          "file": "API_Test/createAndDeleteUserGroup.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/createAndUpdateUser.spec.js",
+      "file": "API_Test/createAndUpdateUser.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_UpdateUser_Test: Create and Update a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 513,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_w615u9\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_w615u9@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_w615u9\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n--- Update User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Update\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"FirstName\": \"Automationfirst_Updated\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71,\n  \"UserName\": \"Autouser_w615u9\",\n  \"EmailAddress\": \"Autouser_w615u9@yopmail.com\"\n}\n"
+                    },
+                    {
+                      "text": "\n--- Update User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User has been updated successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_w615u9\" updated successfully. New FirstName: \"Automationfirst_Updated\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:36.063Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndUpdateUs-cc683-st-Create-and-Update-a-User-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "221ab238c6af73028ac6-a5b9d58bcb587759ca8e",
+          "file": "API_Test/createAndUpdateUser.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "API_UpdateUser_Test: Create and Update a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 508,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_ukzhcp\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_ukzhcp@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_ukzhcp\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n--- Update User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Update\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"FirstName\": \"Automationfirst_Updated\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71,\n  \"UserName\": \"Autouser_ukzhcp\",\n  \"EmailAddress\": \"Autouser_ukzhcp@yopmail.com\"\n}\n"
+                    },
+                    {
+                      "text": "\n--- Update User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User has been updated successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_ukzhcp\" updated successfully. New FirstName: \"Automationfirst_Updated\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:45.786Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndUpdateUs-cc683-st-Create-and-Update-a-User-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "221ab238c6af73028ac6-03f4a32e49fe5decc664",
+          "file": "API_Test/createAndUpdateUser.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "API_UpdateUser_Test: Create and Update a User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 502,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"Autouser_t67yi3\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"Autouser_t67yi3@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_t67yi3\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n--- Update User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Update\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"FirstName\": \"Automationfirst_Updated\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71,\n  \"UserName\": \"Autouser_t67yi3\",\n  \"EmailAddress\": \"Autouser_t67yi3@yopmail.com\"\n}\n"
+                    },
+                    {
+                      "text": "\n--- Update User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User has been updated successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"Autouser_t67yi3\" updated successfully. New FirstName: \"Automationfirst_Updated\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:54.949Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createAndUpdateUs-cc683-st-Create-and-Update-a-User-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "221ab238c6af73028ac6-e9eee025f97f84c6e153",
+          "file": "API_Test/createAndUpdateUser.spec.js",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/createUser.spec.js",
+      "file": "API_Test/createUser.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_CreateUser_Test: Create a user via API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 293,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"AutoUserName_36wuhc\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"AutoUserName_36wuhc@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"AutoUserName_36wuhc\" created successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:36.641Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createUser-API-Cr-ed1ce--Test-Create-a-user-via-API-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1ee9c71af49b5f588fd-0429a316315016d381f2",
+          "file": "API_Test/createUser.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_CreateUser_Test: Create a user via API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 255,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"AutoUserName_9il51w\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"AutoUserName_9il51w@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"AutoUserName_9il51w\" created successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:46.357Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createUser-API-Cr-ed1ce--Test-Create-a-user-via-API-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1ee9c71af49b5f588fd-8dff4d9491fa65a6e2b5",
+          "file": "API_Test/createUser.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_CreateUser_Test: Create a user via API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 260,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/User/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"UserName\": \"AutoUserName_uaydmp\",\n  \"FirstName\": \"Automationfirst\",\n  \"MiddleName\": \"AutomationMiddle\",\n  \"LastName\": \"AutomationLast\",\n  \"EmailAddress\": \"AutoUserName_uaydmp@yopmail.com\",\n  \"Badge\": \"007\",\n  \"UserGroupName\": \"AutomationTestGroup\",\n  \"SubClientId\": 71\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "User \"AutoUserName_uaydmp\" created successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:55.504Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createUser-API-Cr-ed1ce--Test-Create-a-user-via-API-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1ee9c71af49b5f588fd-cc550cc1b6566afe257b",
+          "file": "API_Test/createUser.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/createUserGroup.spec.js",
+      "file": "API_Test/createUserGroup.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_CreateUserGroup_Test: Create a user group via API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 265,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Group Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"GroupName\": \"AutoGroup_asf3a3\",\n  \"NewGroupName\": \"AutoGroup_asf3a3\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Group Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_asf3a3\" created successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:37.009Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createUserGroup-A-1e05f-Create-a-user-group-via-API-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3256d8a07650a445cbcf-1614006c49b34599c43c",
+          "file": "API_Test/createUserGroup.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_CreateUserGroup_Test: Create a user group via API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 254,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Group Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"GroupName\": \"AutoGroup_l4ppao\",\n  \"NewGroupName\": \"AutoGroup_l4ppao\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Group Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_l4ppao\" created successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:46.678Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createUserGroup-A-1e05f-Create-a-user-group-via-API-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3256d8a07650a445cbcf-0083b6ede8fbf275f648",
+          "file": "API_Test/createUserGroup.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_CreateUserGroup_Test: Create a user group via API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 258,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n--- Create User Group Request ---\n"
+                    },
+                    {
+                      "text": "URL: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body: {\n  \"GroupName\": \"AutoGroup_5o8ov2\",\n  \"NewGroupName\": \"AutoGroup_5o8ov2\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n--- Create User Group Response ---\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_5o8ov2\" created successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:55.828Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-createUserGroup-A-1e05f-Create-a-user-group-via-API-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3256d8a07650a445cbcf-f89d07cd5ebed3483235",
+          "file": "API_Test/createUserGroup.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/getbycitationno.spec.js",
+      "file": "API_Test/getbycitationno.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_Get_CitationNoDetails: Validate citation ticket response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 482,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API Request **********\n"
+                    },
+                    {
+                      "text": "Method   : GET\n"
+                    },
+                    {
+                      "text": "Endpoint : https://newhope.vms.staging.rokerplus.com/api/api/tickets/getbycitationno/BNREEE\n"
+                    },
+                    {
+                      "text": "Headers  : {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API Response **********\n"
+                    },
+                    {
+                      "text": "Status       : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Response : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":[{\"CitationNo\":\"BNREEE\",\"TagNumber\":\"BA44221\",\"Province\":\"WI\",\"IssueDate\":\"2025/03/16\",\"IssueTime\":\" 1:00PM\",\"AmountDue\":0.00,\"PayableCode\":\"N\"}]}\n"
+                    },
+                    {
+                      "text": "\n********** Parsed JSON **********\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": [\n    {\n      \"CitationNo\": \"BNREEE\",\n      \"TagNumber\": \"BA44221\",\n      \"Province\": \"WI\",\n      \"IssueDate\": \"2025/03/16\",\n      \"IssueTime\": \" 1:00PM\",\n      \"AmountDue\": 0,\n      \"PayableCode\": \"N\"\n    }\n  ]\n}\n"
+                    },
+                    {
+                      "text": "\nValid content found. Validating citation object...\n"
+                    },
+                    {
+                      "text": "Citation details validated successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:37.335Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-getbycitationno-A-d66ab-te-citation-ticket-response-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "023adfa0e2b933aa8a54-0ee7aa8c6083e3a834fe",
+          "file": "API_Test/getbycitationno.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_Get_CitationNoDetails: Validate citation ticket response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 258,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API Request **********\n"
+                    },
+                    {
+                      "text": "Method   : GET\n"
+                    },
+                    {
+                      "text": "Endpoint : https://newhope.vms.staging.rokerplus.com/api/api/tickets/getbycitationno/BNREEE\n"
+                    },
+                    {
+                      "text": "Headers  : {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API Response **********\n"
+                    },
+                    {
+                      "text": "Status       : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Response : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":[{\"CitationNo\":\"BNREEE\",\"TagNumber\":\"BA44221\",\"Province\":\"WI\",\"IssueDate\":\"2025/03/16\",\"IssueTime\":\" 1:00PM\",\"AmountDue\":0.00,\"PayableCode\":\"N\"}]}\n"
+                    },
+                    {
+                      "text": "\n********** Parsed JSON **********\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": [\n    {\n      \"CitationNo\": \"BNREEE\",\n      \"TagNumber\": \"BA44221\",\n      \"Province\": \"WI\",\n      \"IssueDate\": \"2025/03/16\",\n      \"IssueTime\": \" 1:00PM\",\n      \"AmountDue\": 0,\n      \"PayableCode\": \"N\"\n    }\n  ]\n}\n"
+                    },
+                    {
+                      "text": "\nValid content found. Validating citation object...\n"
+                    },
+                    {
+                      "text": "Citation details validated successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:46.992Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-getbycitationno-A-d66ab-te-citation-ticket-response-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "023adfa0e2b933aa8a54-2169c7eb4c1d886bb018",
+          "file": "API_Test/getbycitationno.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_Get_CitationNoDetails: Validate citation ticket response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 259,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API Request **********\n"
+                    },
+                    {
+                      "text": "Method   : GET\n"
+                    },
+                    {
+                      "text": "Endpoint : https://newhope.vms.staging.rokerplus.com/api/api/tickets/getbycitationno/BNREEE\n"
+                    },
+                    {
+                      "text": "Headers  : {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API Response **********\n"
+                    },
+                    {
+                      "text": "Status       : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Response : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":[{\"CitationNo\":\"BNREEE\",\"TagNumber\":\"BA44221\",\"Province\":\"WI\",\"IssueDate\":\"2025/03/16\",\"IssueTime\":\" 1:00PM\",\"AmountDue\":0.00,\"PayableCode\":\"N\"}]}\n"
+                    },
+                    {
+                      "text": "\n********** Parsed JSON **********\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": [\n    {\n      \"CitationNo\": \"BNREEE\",\n      \"TagNumber\": \"BA44221\",\n      \"Province\": \"WI\",\n      \"IssueDate\": \"2025/03/16\",\n      \"IssueTime\": \" 1:00PM\",\n      \"AmountDue\": 0,\n      \"PayableCode\": \"N\"\n    }\n  ]\n}\n"
+                    },
+                    {
+                      "text": "\nValid content found. Validating citation object...\n"
+                    },
+                    {
+                      "text": "Citation details validated successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:56.155Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-getbycitationno-A-d66ab-te-citation-ticket-response-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "023adfa0e2b933aa8a54-285daca0d927fc8b49e2",
+          "file": "API_Test/getbycitationno.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/getticketstage.spec.js",
+      "file": "API_Test/getticketstage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_Getticketstage_Test: GET ticket stage by citationNo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 403,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n========= API REQUEST =========\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/getticketstage?citationNo=BNREEE\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "Query Params : citationNo=BNREEE\n"
+                    },
+                    {
+                      "text": "\n========= API RESPONSE =========\n"
+                    },
+                    {
+                      "text": "Status Code   : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Body      : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"StageName\":\"CLOSED\",\"StageCompleted\":1,\"TagState\":\"WI\",\"HoldPayment\":\"No\"}}\n"
+                    },
+                    {
+                      "text": "\n========= PARSED RESPONSE =========\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": {\n    \"StageName\": \"CLOSED\",\n    \"StageCompleted\": 1,\n    \"TagState\": \"WI\",\n    \"HoldPayment\": \"No\"\n  }\n}\n"
+                    },
+                    {
+                      "text": "\nValid ticket stage response received. StageName: CLOSED\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:37.875Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-getticketstage-AP-4259c--ticket-stage-by-citationNo-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75644d67442649c0d418-ce0ba90fe28387544b83",
+          "file": "API_Test/getticketstage.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_Getticketstage_Test: GET ticket stage by citationNo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 290,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n========= API REQUEST =========\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/getticketstage?citationNo=BNREEE\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "Query Params : citationNo=BNREEE\n"
+                    },
+                    {
+                      "text": "\n========= API RESPONSE =========\n"
+                    },
+                    {
+                      "text": "Status Code   : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Body      : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"StageName\":\"CLOSED\",\"StageCompleted\":1,\"TagState\":\"WI\",\"HoldPayment\":\"No\"}}\n"
+                    },
+                    {
+                      "text": "\n========= PARSED RESPONSE =========\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": {\n    \"StageName\": \"CLOSED\",\n    \"StageCompleted\": 1,\n    \"TagState\": \"WI\",\n    \"HoldPayment\": \"No\"\n  }\n}\n"
+                    },
+                    {
+                      "text": "\nValid ticket stage response received. StageName: CLOSED\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:47.363Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-getticketstage-AP-4259c--ticket-stage-by-citationNo-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75644d67442649c0d418-5cdf149bf1a13f68c9e1",
+          "file": "API_Test/getticketstage.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_Getticketstage_Test: GET ticket stage by citationNo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 250,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n========= API REQUEST =========\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/getticketstage?citationNo=BNREEE\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "Query Params : citationNo=BNREEE\n"
+                    },
+                    {
+                      "text": "\n========= API RESPONSE =========\n"
+                    },
+                    {
+                      "text": "Status Code   : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Body      : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"StageName\":\"CLOSED\",\"StageCompleted\":1,\"TagState\":\"WI\",\"HoldPayment\":\"No\"}}\n"
+                    },
+                    {
+                      "text": "\n========= PARSED RESPONSE =========\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": {\n    \"StageName\": \"CLOSED\",\n    \"StageCompleted\": 1,\n    \"TagState\": \"WI\",\n    \"HoldPayment\": \"No\"\n  }\n}\n"
+                    },
+                    {
+                      "text": "\nValid ticket stage response received. StageName: CLOSED\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:56.483Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-getticketstage-AP-4259c--ticket-stage-by-citationNo-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75644d67442649c0d418-4c78f927452b0ddd6b20",
+          "file": "API_Test/getticketstage.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/TicketlookupByLicensePlate.spec.js",
+      "file": "API_Test/TicketlookupByLicensePlate.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_TicketLookup_ByLicensePlate_Test: Validate lookup response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 419,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n========== API REQUEST ==========\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate\n"
+                    },
+                    {
+                      "text": "Query Params : {\n  \"agency\": \"OTTCI\",\n  \"licensePlate\": \"223SA\",\n  \"province\": \"AB\"\n}\n"
+                    },
+                    {
+                      "text": "Full URL     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate?agency=OTTCI&licensePlate=223SA&province=AB\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\n========== API RESPONSE ==========\n"
+                    },
+                    {
+                      "text": "Status Code  : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Body     : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"TotalTickets\":1,\"TicketSummonsInfo\":[{\"RecordKey\":151,\"AgencyDesignator\":\"OTTCI\",\"IssueNo\":\"WWEC\",\"TrialCode\":\"\",\"IssueDate\":\"2025/03/28\",\"IssueTime\":\"05:55 AM\",\"LicPlate\":\"223sa\",\"LicStateProv\":\"AB\",\"VehiclePlateType\":\"\",\"AmountDue\":0.00,\"TotalCashPaid\":80,\"Payable\":\"N\",\"TxtAmountdue\":\"0.00\",\"CollectionDate\":\"1900-01-01T00:00:00\",\"DueDate\":\"2025/04/07\"}],\"ErrorMessage\":\"\"}}\n"
+                    },
+                    {
+                      "text": "\n========== PARSED RESPONSE ==========\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": {\n    \"TotalTickets\": 1,\n    \"TicketSummonsInfo\": [\n      {\n        \"RecordKey\": 151,\n        \"AgencyDesignator\": \"OTTCI\",\n        \"IssueNo\": \"WWEC\",\n        \"TrialCode\": \"\",\n        \"IssueDate\": \"2025/03/28\",\n        \"IssueTime\": \"05:55 AM\",\n        \"LicPlate\": \"223sa\",\n        \"LicStateProv\": \"AB\",\n        \"VehiclePlateType\": \"\",\n        \"AmountDue\": 0,\n        \"TotalCashPaid\": 80,\n        \"Payable\": \"N\",\n        \"TxtAmountdue\": \"0.00\",\n        \"CollectionDate\": \"1900-01-01T00:00:00\",\n        \"DueDate\": \"2025/04/07\"\n      }\n    ],\n    \"ErrorMessage\": \"\"\n  }\n}\n"
+                    },
+                    {
+                      "text": "\nValid ticket found for plate: 223sa\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:38.340Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-TicketlookupByLic-b4c55-st-Validate-lookup-response-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0eff63616077b6e78ea6-b2fe99c34a6cc81d053b",
+          "file": "API_Test/TicketlookupByLicensePlate.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_TicketLookup_ByLicensePlate_Test: Validate lookup response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 322,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n========== API REQUEST ==========\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate\n"
+                    },
+                    {
+                      "text": "Query Params : {\n  \"agency\": \"OTTCI\",\n  \"licensePlate\": \"223SA\",\n  \"province\": \"AB\"\n}\n"
+                    },
+                    {
+                      "text": "Full URL     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate?agency=OTTCI&licensePlate=223SA&province=AB\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\n========== API RESPONSE ==========\n"
+                    },
+                    {
+                      "text": "Status Code  : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Body     : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"TotalTickets\":1,\"TicketSummonsInfo\":[{\"RecordKey\":151,\"AgencyDesignator\":\"OTTCI\",\"IssueNo\":\"WWEC\",\"TrialCode\":\"\",\"IssueDate\":\"2025/03/28\",\"IssueTime\":\"05:55 AM\",\"LicPlate\":\"223sa\",\"LicStateProv\":\"AB\",\"VehiclePlateType\":\"\",\"AmountDue\":0.00,\"TotalCashPaid\":80,\"Payable\":\"N\",\"TxtAmountdue\":\"0.00\",\"CollectionDate\":\"1900-01-01T00:00:00\",\"DueDate\":\"2025/04/07\"}],\"ErrorMessage\":\"\"}}\n"
+                    },
+                    {
+                      "text": "\n========== PARSED RESPONSE ==========\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": {\n    \"TotalTickets\": 1,\n    \"TicketSummonsInfo\": [\n      {\n        \"RecordKey\": 151,\n        \"AgencyDesignator\": \"OTTCI\",\n        \"IssueNo\": \"WWEC\",\n        \"TrialCode\": \"\",\n        \"IssueDate\": \"2025/03/28\",\n        \"IssueTime\": \"05:55 AM\",\n        \"LicPlate\": \"223sa\",\n        \"LicStateProv\": \"AB\",\n        \"VehiclePlateType\": \"\",\n        \"AmountDue\": 0,\n        \"TotalCashPaid\": 80,\n        \"Payable\": \"N\",\n        \"TxtAmountdue\": \"0.00\",\n        \"CollectionDate\": \"1900-01-01T00:00:00\",\n        \"DueDate\": \"2025/04/07\"\n      }\n    ],\n    \"ErrorMessage\": \"\"\n  }\n}\n"
+                    },
+                    {
+                      "text": "\nValid ticket found for plate: 223sa\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:47.726Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-TicketlookupByLic-b4c55-st-Validate-lookup-response-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0eff63616077b6e78ea6-391747f043b83b628b4e",
+          "file": "API_Test/TicketlookupByLicensePlate.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "API_TicketLookup_ByLicensePlate_Test: Validate lookup response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 254,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n========== API REQUEST ==========\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate\n"
+                    },
+                    {
+                      "text": "Query Params : {\n  \"agency\": \"OTTCI\",\n  \"licensePlate\": \"223SA\",\n  \"province\": \"AB\"\n}\n"
+                    },
+                    {
+                      "text": "Full URL     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate?agency=OTTCI&licensePlate=223SA&province=AB\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\n========== API RESPONSE ==========\n"
+                    },
+                    {
+                      "text": "Status Code  : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Raw Body     : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"TotalTickets\":1,\"TicketSummonsInfo\":[{\"RecordKey\":151,\"AgencyDesignator\":\"OTTCI\",\"IssueNo\":\"WWEC\",\"TrialCode\":\"\",\"IssueDate\":\"2025/03/28\",\"IssueTime\":\"05:55 AM\",\"LicPlate\":\"223sa\",\"LicStateProv\":\"AB\",\"VehiclePlateType\":\"\",\"AmountDue\":0.00,\"TotalCashPaid\":80,\"Payable\":\"N\",\"TxtAmountdue\":\"0.00\",\"CollectionDate\":\"1900-01-01T00:00:00\",\"DueDate\":\"2025/04/07\"}],\"ErrorMessage\":\"\"}}\n"
+                    },
+                    {
+                      "text": "\n========== PARSED RESPONSE ==========\n"
+                    },
+                    {
+                      "text": "{\n  \"StatusMessage\": \"Success\",\n  \"StatusCode\": 200,\n  \"Content\": {\n    \"TotalTickets\": 1,\n    \"TicketSummonsInfo\": [\n      {\n        \"RecordKey\": 151,\n        \"AgencyDesignator\": \"OTTCI\",\n        \"IssueNo\": \"WWEC\",\n        \"TrialCode\": \"\",\n        \"IssueDate\": \"2025/03/28\",\n        \"IssueTime\": \"05:55 AM\",\n        \"LicPlate\": \"223sa\",\n        \"LicStateProv\": \"AB\",\n        \"VehiclePlateType\": \"\",\n        \"AmountDue\": 0,\n        \"TotalCashPaid\": 80,\n        \"Payable\": \"N\",\n        \"TxtAmountdue\": \"0.00\",\n        \"CollectionDate\": \"1900-01-01T00:00:00\",\n        \"DueDate\": \"2025/04/07\"\n      }\n    ],\n    \"ErrorMessage\": \"\"\n  }\n}\n"
+                    },
+                    {
+                      "text": "\nValid ticket found for plate: 223sa\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:56.793Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-TicketlookupByLic-b4c55-st-Validate-lookup-response-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0eff63616077b6e78ea6-dff5d666f9ab027d3278",
+          "file": "API_Test/TicketlookupByLicensePlate.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/ticketlookupByTicketNo.spec.js",
+      "file": "API_Test/ticketlookupByTicketNo.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_TicketLookup_ByTicketNo_Test: Validate ticket lookup response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 319,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API REQUEST **********\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate\n"
+                    },
+                    {
+                      "text": "Query Params : {\n  \"agency\": \"OTTCI\",\n  \"licensePlate\": \"223SA\",\n  \"province\": \"AB\"\n}\n"
+                    },
+                    {
+                      "text": "Full URL     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate?agency=OTTCI&licensePlate=223SA&province=AB\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API RESPONSE **********\n"
+                    },
+                    {
+                      "text": "Status Code  : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"TotalTickets\":1,\"TicketSummonsInfo\":[{\"RecordKey\":151,\"AgencyDesignator\":\"OTTCI\",\"IssueNo\":\"WWEC\",\"TrialCode\":\"\",\"IssueDate\":\"2025/03/28\",\"IssueTime\":\"05:55 AM\",\"LicPlate\":\"223sa\",\"LicStateProv\":\"AB\",\"VehiclePlateType\":\"\",\"AmountDue\":0.00,\"TotalCashPaid\":80,\"Payable\":\"N\",\"TxtAmountdue\":\"0.00\",\"CollectionDate\":\"1900-01-01T00:00:00\",\"DueDate\":\"2025/04/07\"}],\"ErrorMessage\":\"\"}}\n"
+                    },
+                    {
+                      "text": "\nTicket Found:\n"
+                    },
+                    {
+                      "text": "{\n  \"RecordKey\": 151,\n  \"AgencyDesignator\": \"OTTCI\",\n  \"IssueNo\": \"WWEC\",\n  \"TrialCode\": \"\",\n  \"IssueDate\": \"2025/03/28\",\n  \"IssueTime\": \"05:55 AM\",\n  \"LicPlate\": \"223sa\",\n  \"LicStateProv\": \"AB\",\n  \"VehiclePlateType\": \"\",\n  \"AmountDue\": 0,\n  \"TotalCashPaid\": 80,\n  \"Payable\": \"N\",\n  \"TxtAmountdue\": \"0.00\",\n  \"CollectionDate\": \"1900-01-01T00:00:00\",\n  \"DueDate\": \"2025/04/07\"\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:38.835Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-ticketlookupByTic-40833-date-ticket-lookup-response-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "978fd38560fbccaee261-8b2889256b327baf7203",
+          "file": "API_Test/ticketlookupByTicketNo.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_TicketLookup_ByTicketNo_Test: Validate ticket lookup response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 251,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API REQUEST **********\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate\n"
+                    },
+                    {
+                      "text": "Query Params : {\n  \"agency\": \"OTTCI\",\n  \"licensePlate\": \"223SA\",\n  \"province\": \"AB\"\n}\n"
+                    },
+                    {
+                      "text": "Full URL     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate?agency=OTTCI&licensePlate=223SA&province=AB\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API RESPONSE **********\n"
+                    },
+                    {
+                      "text": "Status Code  : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"TotalTickets\":1,\"TicketSummonsInfo\":[{\"RecordKey\":151,\"AgencyDesignator\":\"OTTCI\",\"IssueNo\":\"WWEC\",\"TrialCode\":\"\",\"IssueDate\":\"2025/03/28\",\"IssueTime\":\"05:55 AM\",\"LicPlate\":\"223sa\",\"LicStateProv\":\"AB\",\"VehiclePlateType\":\"\",\"AmountDue\":0.00,\"TotalCashPaid\":80,\"Payable\":\"N\",\"TxtAmountdue\":\"0.00\",\"CollectionDate\":\"1900-01-01T00:00:00\",\"DueDate\":\"2025/04/07\"}],\"ErrorMessage\":\"\"}}\n"
+                    },
+                    {
+                      "text": "\nTicket Found:\n"
+                    },
+                    {
+                      "text": "{\n  \"RecordKey\": 151,\n  \"AgencyDesignator\": \"OTTCI\",\n  \"IssueNo\": \"WWEC\",\n  \"TrialCode\": \"\",\n  \"IssueDate\": \"2025/03/28\",\n  \"IssueTime\": \"05:55 AM\",\n  \"LicPlate\": \"223sa\",\n  \"LicStateProv\": \"AB\",\n  \"VehiclePlateType\": \"\",\n  \"AmountDue\": 0,\n  \"TotalCashPaid\": 80,\n  \"Payable\": \"N\",\n  \"TxtAmountdue\": \"0.00\",\n  \"CollectionDate\": \"1900-01-01T00:00:00\",\n  \"DueDate\": \"2025/04/07\"\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:48.134Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-ticketlookupByTic-40833-date-ticket-lookup-response-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "978fd38560fbccaee261-0e1ddcd07aff9b98f1ea",
+          "file": "API_Test/ticketlookupByTicketNo.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_TicketLookup_ByTicketNo_Test: Validate ticket lookup response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 251,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API REQUEST **********\n"
+                    },
+                    {
+                      "text": "Method       : GET\n"
+                    },
+                    {
+                      "text": "Endpoint     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate\n"
+                    },
+                    {
+                      "text": "Query Params : {\n  \"agency\": \"OTTCI\",\n  \"licensePlate\": \"223SA\",\n  \"province\": \"AB\"\n}\n"
+                    },
+                    {
+                      "text": "Full URL     : https://newhope.vms.staging.rokerplus.com/api/ticketlookupByLicensePlate?agency=OTTCI&licensePlate=223SA&province=AB\n"
+                    },
+                    {
+                      "text": "Headers      : {\n  \"accept\": \"text/plain\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API RESPONSE **********\n"
+                    },
+                    {
+                      "text": "Status Code  : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body: {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":{\"TotalTickets\":1,\"TicketSummonsInfo\":[{\"RecordKey\":151,\"AgencyDesignator\":\"OTTCI\",\"IssueNo\":\"WWEC\",\"TrialCode\":\"\",\"IssueDate\":\"2025/03/28\",\"IssueTime\":\"05:55 AM\",\"LicPlate\":\"223sa\",\"LicStateProv\":\"AB\",\"VehiclePlateType\":\"\",\"AmountDue\":0.00,\"TotalCashPaid\":80,\"Payable\":\"N\",\"TxtAmountdue\":\"0.00\",\"CollectionDate\":\"1900-01-01T00:00:00\",\"DueDate\":\"2025/04/07\"}],\"ErrorMessage\":\"\"}}\n"
+                    },
+                    {
+                      "text": "\nTicket Found:\n"
+                    },
+                    {
+                      "text": "{\n  \"RecordKey\": 151,\n  \"AgencyDesignator\": \"OTTCI\",\n  \"IssueNo\": \"WWEC\",\n  \"TrialCode\": \"\",\n  \"IssueDate\": \"2025/03/28\",\n  \"IssueTime\": \"05:55 AM\",\n  \"LicPlate\": \"223sa\",\n  \"LicStateProv\": \"AB\",\n  \"VehiclePlateType\": \"\",\n  \"AmountDue\": 0,\n  \"TotalCashPaid\": 80,\n  \"Payable\": \"N\",\n  \"TxtAmountdue\": \"0.00\",\n  \"CollectionDate\": \"1900-01-01T00:00:00\",\n  \"DueDate\": \"2025/04/07\"\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:57.113Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-ticketlookupByTic-40833-date-ticket-lookup-response-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "978fd38560fbccaee261-03fe65104288a669d743",
+          "file": "API_Test/ticketlookupByTicketNo.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/UpdateTicketEnforcement.spec.js",
+      "file": "API_Test/UpdateTicketEnforcement.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_UpdateTicketEnforcement_Test: Update ticket enforcement data and validate response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 321,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API REQUEST **********\n"
+                    },
+                    {
+                      "text": "Endpoint      : https://newhope.vms.staging.rokerplus.com/api/api/updateticketenforcement\n"
+                    },
+                    {
+                      "text": "Headers       : {\n  \"accept\": \"text/plain\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body  : {\n  \"NewTicketNo\": \"SPR2888\",\n  \"OldTicketNo\": \"WWEC\",\n  \"PlateNumber\": \"SP44423\",\n  \"ProvinceState\": \"AL\",\n  \"PlateExpiryTime\": \"09/25\",\n  \"VehicleMake\": \"FORD\",\n  \"VehicleColor\": \"RED\",\n  \"Location\": \"Schrute Farms\",\n  \"Amount\": \"30.00\",\n  \"IssueDate\": \"2025-04-30 13:00:00.000\",\n  \"PatrollerComments\": \"test\",\n  \"ViolationType\": \"Days-167\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API RESPONSE **********\n"
+                    },
+                    {
+                      "text": "Status Code   : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":\"Record successfully updated.\"}\n"
+                    },
+                    {
+                      "text": "\nTicket enforcement record updated successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:39.221Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-UpdateTicketEnfor-23154--data-and-validate-response-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "33807019e7fa8918ca3d-bc00a611a7a62631ad3a",
+          "file": "API_Test/UpdateTicketEnforcement.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_UpdateTicketEnforcement_Test: Update ticket enforcement data and validate response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 279,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API REQUEST **********\n"
+                    },
+                    {
+                      "text": "Endpoint      : https://newhope.vms.staging.rokerplus.com/api/api/updateticketenforcement\n"
+                    },
+                    {
+                      "text": "Headers       : {\n  \"accept\": \"text/plain\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body  : {\n  \"NewTicketNo\": \"SPR2888\",\n  \"OldTicketNo\": \"WWEC\",\n  \"PlateNumber\": \"SP44423\",\n  \"ProvinceState\": \"AL\",\n  \"PlateExpiryTime\": \"09/25\",\n  \"VehicleMake\": \"FORD\",\n  \"VehicleColor\": \"RED\",\n  \"Location\": \"Schrute Farms\",\n  \"Amount\": \"30.00\",\n  \"IssueDate\": \"2025-04-30 13:00:00.000\",\n  \"PatrollerComments\": \"test\",\n  \"ViolationType\": \"Days-167\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API RESPONSE **********\n"
+                    },
+                    {
+                      "text": "Status Code   : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":\"Record successfully updated.\"}\n"
+                    },
+                    {
+                      "text": "\nTicket enforcement record updated successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:48.456Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-UpdateTicketEnfor-23154--data-and-validate-response-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "33807019e7fa8918ca3d-503a3153e5c8c823a399",
+          "file": "API_Test/UpdateTicketEnforcement.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API_UpdateTicketEnforcement_Test: Update ticket enforcement data and validate response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 254,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n********** API REQUEST **********\n"
+                    },
+                    {
+                      "text": "Endpoint      : https://newhope.vms.staging.rokerplus.com/api/api/updateticketenforcement\n"
+                    },
+                    {
+                      "text": "Headers       : {\n  \"accept\": \"text/plain\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Request Body  : {\n  \"NewTicketNo\": \"SPR2888\",\n  \"OldTicketNo\": \"WWEC\",\n  \"PlateNumber\": \"SP44423\",\n  \"ProvinceState\": \"AL\",\n  \"PlateExpiryTime\": \"09/25\",\n  \"VehicleMake\": \"FORD\",\n  \"VehicleColor\": \"RED\",\n  \"Location\": \"Schrute Farms\",\n  \"Amount\": \"30.00\",\n  \"IssueDate\": \"2025-04-30 13:00:00.000\",\n  \"PatrollerComments\": \"test\",\n  \"ViolationType\": \"Days-167\"\n}\n"
+                    },
+                    {
+                      "text": "\n********** API RESPONSE **********\n"
+                    },
+                    {
+                      "text": "Status Code   : \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response Body : {\"StatusMessage\":\"Success\",\"StatusCode\":200,\"Content\":\"Record successfully updated.\"}\n"
+                    },
+                    {
+                      "text": "\nTicket enforcement record updated successfully.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:57.434Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-UpdateTicketEnfor-23154--data-and-validate-response-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "33807019e7fa8918ca3d-9069cb51e1ccc14514eb",
+          "file": "API_Test/UpdateTicketEnforcement.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "API_Test/updateUserGroup.spec.js",
+      "file": "API_Test/updateUserGroup.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API_UpdateUserGroup_Test: Create and Update a User Group",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 537,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n===== CREATE GROUP REQUEST =====\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"GroupName\": \"AutoGroup_dey0p8\",\n  \"NewGroupName\": \"AutoGroup_dey0p8\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n===== CREATE GROUP RESPONSE =====\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_dey0p8\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n===== UPDATE GROUP REQUEST =====\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Update\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"GroupName\": \"AutoGroup_dey0p8\",\n  \"NewGroupName\": \"AutoGroup_dey0p8_Updated\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n===== UPDATE GROUP RESPONSE =====\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User Group has been updated successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group updated from \"AutoGroup_dey0p8\" to \"AutoGroup_dey0p8_Updated\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:39.620Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-updateUserGroup-A-e555f-ate-and-Update-a-User-Group-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "788e20c7c1ac61f37d12-0a8335200ad6d88c5c59",
+          "file": "API_Test/updateUserGroup.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "API_UpdateUserGroup_Test: Create and Update a User Group",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 524,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n===== CREATE GROUP REQUEST =====\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"GroupName\": \"AutoGroup_d0rfts\",\n  \"NewGroupName\": \"AutoGroup_d0rfts\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n===== CREATE GROUP RESPONSE =====\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_d0rfts\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n===== UPDATE GROUP REQUEST =====\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Update\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"GroupName\": \"AutoGroup_d0rfts\",\n  \"NewGroupName\": \"AutoGroup_d0rfts_Updated\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n===== UPDATE GROUP RESPONSE =====\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User Group has been updated successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group updated from \"AutoGroup_d0rfts\" to \"AutoGroup_d0rfts_Updated\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:48.803Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-updateUserGroup-A-e555f-ate-and-Update-a-User-Group-firefox/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "788e20c7c1ac61f37d12-f2a4073e605a6f13c437",
+          "file": "API_Test/updateUserGroup.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "API_UpdateUserGroup_Test: Create and Update a User Group",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 521,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n===== CREATE GROUP REQUEST =====\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Create\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"GroupName\": \"AutoGroup_5mq4d6\",\n  \"NewGroupName\": \"AutoGroup_5mq4d6\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n===== CREATE GROUP RESPONSE =====\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User Group has been created.\",\"StatusCode\":201,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group \"AutoGroup_5mq4d6\" created successfully.\n"
+                    },
+                    {
+                      "text": "\n===== UPDATE GROUP REQUEST =====\n"
+                    },
+                    {
+                      "text": "Endpoint: https://newhope.vms.staging.rokerplus.com/api/api/UserGroup/Update\n"
+                    },
+                    {
+                      "text": "Headers: {\n  \"accept\": \"text/plain\",\n  \"Token\": \"7pISu/sDS7lZnLsf+hVGe01qR9oNsKMfXKQysty3fDxQ0DVwtLCjWU9ZGu7Rbbk6\",\n  \"Content-Type\": \"application/json\"\n}\n"
+                    },
+                    {
+                      "text": "Body: {\n  \"GroupName\": \"AutoGroup_5mq4d6\",\n  \"NewGroupName\": \"AutoGroup_5mq4d6_Updated\",\n  \"SubClientId\": 71,\n  \"IsServCounter\": true,\n  \"IManager\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IAdmin\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IWorx\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"INotice\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"IReport\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  },\n  \"MTOSQQA\": {\n    \"IsView\": true,\n    \"IsAdd\": true,\n    \"IsApprove\": true\n  }\n}\n"
+                    },
+                    {
+                      "text": "\n===== UPDATE GROUP RESPONSE =====\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Body: {\"StatusMessage\":\"User Group has been updated successfully.\",\"StatusCode\":200,\"Content\":\"\"}\n"
+                    },
+                    {
+                      "text": "Group updated from \"AutoGroup_5mq4d6\" to \"AutoGroup_5mq4d6_Updated\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-24T04:52:57.770Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/VVenkateshwaran/Desktop/Roker_VMS/test-results/API_Test-updateUserGroup-A-e555f-ate-and-Update-a-User-Group-webkit/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "788e20c7c1ac61f37d12-01806edd2d36214a3f03",
+          "file": "API_Test/updateUserGroup.spec.js",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-24T04:52:26.625Z",
+    "duration": 31792.128999999997,
+    "expected": 48,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
