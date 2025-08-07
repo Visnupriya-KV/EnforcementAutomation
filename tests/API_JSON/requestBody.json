@@ -1,0 +1,30 @@
+[
+    {
+      "violationDate": "2024-08-27T23:27:26.351Z",
+      "issuedDate": "2024-08-27T23:27:26.351Z",
+      "violationNumber": "12435667755556",
+      "violationFee": 10,
+      "parkingFee": 10,
+      "adminFee": 10,
+      "ticketAmount": 10,
+      "totalAmountDue": 10,
+      "licensePlate": "MTRYUU",
+      "licensePlateState": "MO",
+      "violationType": "string",
+      "locationCode": "99999",
+      "entryRecordedAt": "string",
+      "exitRecordedAt": "string",
+      "totalTimeParked": "string",
+      "mmc": {
+        "vehicleMake": "TEST",
+        "vehicleModel": "TEST",
+        "vehicleColor": "Silver"
+      },
+      "voilationImage": {
+        "violationImage1": "TEST",
+        "violationImage2": "string",
+        "violationImage3": "string"
+      }
+    }
+  ]
+  
